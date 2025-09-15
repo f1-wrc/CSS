@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos CSS: Tiporafia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Oswald", sans-serif;
+        }
+        .fuente-ejemplo-1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            /*cambio de estilo de fuente*/
+        }
+
+        .fuente-ejemplo-2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            /*unidad en px, evitar utilizar*/
+        }
+
+        .fuente-tam-px {
+            font-size: 16px;
+            /*unidad absoluta*/
+        }
+
+        .fuente-tam-em {
+            font-size: 1em;
+        }
+
+        .fuente-tam-em span {
+            font-size: 2em;
+            /*unidad relaiva*/
+        }
+
+        .fuente-grosor {
+            font-weight: 100;
+        }
+
+        .fuente-inter-peque {
+            line-height: 1
+        }
+
+        .fuente-inter-normal {
+            line-height: 1.6
+        }
+
+        .fuente-inter-grande {
+            line-height: 2.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejemplos de Tipografia de CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tipo de fuente: front-family</h2>
+            <p class="fuente-ejemplo-1">
+                Tipo de fuente
+            </p>
+            <p class="fuente-ejemplo-2">
+                Tipo de fuente
+            </p>
+        </section>
+        <section>
+            <h2>Tamaño de fuente</h2>
+            <p class="fuente-tam-px">
+                Texto en píxeles
+            </p>
+            <p class="fuente-tam-em">
+                en em <span>Texto al doble</span>
+            </p>
+        </section>
+        <section>
+            <h2>Grosor de fuente: font-weight</h2>
+            <p class="fuente-grosor">
+                El valor normal del grosor de la fuente es 400. Font-weight define el grosor-fuente con un valor mínimo
+                de 100 y máximo a 900
+            </p>
+        </section>
+        <section>
+            <h2>Altura de línea (interineado): line-height</h2>
+            <p class="fuente-inter-peque">Interlineado pequeño. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Amet sit eos odio iure, minus reiciendis nisi expedita fugit perspiciatis atque laborum rem ullam
+                dolorem tempore cupiditate molestiae quis? Aspernatur, fugiat?</p>
+            <p class="fuente-inter-normal">Interlineado normal. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Ad velit sequi animi est quis dicta, consequuntur ducimus laboriosam aliquid vel quidem quaerat
+                deleniti excepturi. Quibusdam quos molestias reiciendis adipisci deserunt!</p>
+            <p class="fuente-inter-grande">Interlineado grande. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Eligendi doloremque error quisquam reprehenderit aut maiores, omnis, porro maxime tempore quia
+                placeat hic inventore consequatur a pariatur veniam quos labore modi.</p>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>

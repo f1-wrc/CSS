@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos CSS: Colores y Fondos</title>
+
+    <style>
+        header {
+            /* selector por etiquetas */
+            padding: 15px; /* la distancia entre el borde y el contenido*/
+            border: 2px solid #d13ebe; /* tamaño del borde en px, tipo de borde (solid) color */
+            border-radius: 8px; /* me redondea los bordes */
+        }
+
+        /* para seleccionar una clase se utiliza el punto (.) y luego el nombre de la clase */
+        .color-nombre {
+            color: brown;
+        }
+
+        .color-hex {
+            color: #3ca9ca;
+        }
+
+        .color-RGB {
+            color: rgb(95, 52, 212);
+        }
+
+        .color-RGBA {
+            color: rgba(74, 192, 44, 1);
+            /* El último canal es la transparencia. Valor 0 (plena transparencia) Valor 1, (pleno color)*/
+            background-color: rgb(41, 40, 35);
+        }
+        .caja {
+            
+            padding: 10px;
+            border: 3px solid#ca3939;
+            border-radius: 8px;
+        }
+
+        .color-fondo {
+            background-color: rgb(52, 53, 63);
+        }
+
+        .imagen-fondo {
+            background-image: url("../missi.jpeg");
+            background-size: cover;
+        }
+        .imagen-fondo h2{
+            color: azure;
+        }
+        .imagen-fondo p{
+            color: azure;
+        }
+        .color-fondo h2{
+            color: azure;
+        }
+        .color-fondo p{
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Ejemplo 1: Colores de texto</h1>
+        <p class="color-nombre">Este texto usa la propiedad color</p>
+        <p class="color-hex">Este texto usa código hexadecimal</p>
+        <p class="color-RGB">Este texto usa valores RGB</p>
+        <p class="color-RGBA">Este texto usa valores RGBA para añadir transparencia</p>
+    </header>
+
+    <main>
+        <section class="caja color-fondo">
+            <h2>Colores de fondos</h2>
+            <p>
+                Contenedor con un coolor de fondo de tipo sólido
+            </p>
+        </section>
+        <section class="caja imagen-fondo">
+            <h2>Imagen de fondo</h2>
+            <p>
+                Contenedor con una imagen de fondo. Utilizaremos la propiedad background-image.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>
