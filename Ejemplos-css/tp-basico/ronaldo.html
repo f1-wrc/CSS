@@ -6,34 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristiano Ronaldo</title>
 
-    <link rel="stylesheet" href="./ronaldo.css">
+    <link rel="stylesheet" href="./ronaldo.css"> <!--link personal-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--link de google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <img src="./assets/ronaldo.jpg" width="350" alt="">
+    <header> <!--encabezado de la pagina-->
+        <div><!--divisor entre etiqutas-->
+            <img src="./assets/ronaldo.jpg" width="350" alt=""><!--cargamos la imagen de Cristiano-->
         </div>
-        <h1>
+        <h1><!--titulo principal-->
             Cristiano Ronaldo 💪🏼
         </h1>
-        <h2><em><strong>Futbolista Profesional</strong></em></h2>
+        <h2><em><strong>Futbolista Profesional</strong></em></h2><!--subtitulo-->
     </header>
 
 
 
-    <main>
+    <main> <!--es la parte principal en un formulario-->
         <section>
-            <h2>Acerca de Cristiano</h2>
+            <h3>Acerca de Cristiano</h3><!--titulo dentro del formulario-->
 
             <p>Cristiano Ronaldo Dos Santos Aveiro, nacido el 5 de febrero de 1985 en Funchal, Portugal es un futbolista
                 conocido globalmente y como uno de los ejores jugadores de la historia del deporte.</p>
+            <!--explicacion sobre Cristiano-->
 
             <p>Consiguió indiualmente 5 balones de oro, 4 botas de oro, 5 Champions League, 1 Eurocopa, 1 Uefa Nations
                 League, maximo goleador de su seleccion y muchos mas</p>
 
-            <ul>
+            <ul><!--lista desordenada-->
                 <li><span>Correo:
                     </span>
                     Cristiano7@gmail.com
@@ -51,19 +60,21 @@
 
         <section>
 
-            <h2>Contacto con Cristiano</h2>
+            <h3>Contacto con Cristiano</h3>
 
-            <form action="" method="post">
+            <form action="" method="post"><!--etiqueta que permite abrir el formulario-->
 
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo" required>
+                <label for="nombre">Nombre Completo</label><!--crea una etiqueta de texto-->
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre completo"
+                    required><!--input permite ingresar datos--><!--required es un requirimiento obligatorio para la etiqueta-->
 
                 <div>
                     <p>Este campo es obligatorio</p>
                 </div>
-                
+
                 <label for="correo">Correo Electronico</label>
-                <input type="email" name="correo" id="correo" placeholder="Ejemplo@gmail.com">
+                <input type="email" name="correo" id="correo"
+                    placeholder="Ejemplo@gmail.com"><!--placholder es una instruccion que ayuda al usuario-->
 
                 <div>
                     <p>Por favor ingresa un email valido</p>
@@ -83,8 +94,8 @@
 
                 <label for="pais">Pais</label>
                 <div>
-                    <select name="pais" id="pais">
-                        <option value="pais">Seleccione un pais</option>
+                    <select name="pais" id="pais"><!--muestra un menu de opciones-->
+                        <option value="pais">Seleccione un pais</option><!--son las opciones dentro del menu-->
                         <option value="Argentina">🇦🇷</option>
                         <option value="Brasil">🇧🇷</option>
                         <option value="España">🇪🇸</option>
@@ -104,7 +115,7 @@
                 </div>
 
                 <div class="contenedor-btn">
-                    <button type="submit" class="btn" id="btn-contacto">Contactar</button>
+                    <button type="submit" class="btn" id="btn-contacto">Contactar</button><!--boton-->
                     <button class="btn" id="btn-portafolio">Portafolio</button>
                 </div>
 

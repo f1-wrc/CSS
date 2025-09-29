@@ -1,20 +1,23 @@
 img {
-    border: 8px solid #C902EC;
-    border-radius: 80px;
+    border: 8px solid #C902EC; /*le da color al borde*/
+    border-radius: 80px; /*angulo de radio para el borde*/
 }
 
 
 header {
-    border-bottom: 5px solid #C902EC;
-    text-align: center;
+    border-bottom: 5px solid #C902EC; /*le da color al pie del borde*/
+    text-align: center;  /*posicion al texto*/
+    margin-bottom: 35px; /*separa los elementos fuera del margen*/
 }
 
 
 h1 {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #000000;
-    color: #3C729F;
+    font-family: Georgia, 'Times New Roman', Times, serif; /*opcion de letra para el texto*/
+    background-color: #000000; /*color de fondo*/
+    color: #3C729F; /*color de letra*/
+    padding: 15px; /*espacio dentro de un elemento*/
+    box-shadow: 10px -10px 15px 5px #3d60d4; /*sombrea*/
 }
 
 h2 {
@@ -22,17 +25,28 @@ h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #000000;
     color: #3C729F;
+    font-style: italic;/*estilo de la fuente*/
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #000000;
+    color: #3C729F;
+
 }
 
 main {
-    width: 700px;
-    margin: 0 auto;
+    width: 700px; /*ancho*/
+    margin: 0 auto; /*margen*/
     border: 2px solid #3C729F;
     border-radius: 4px;
+    box-shadow: 0px -5px 36px 30px #9E4384;
+    padding: 15px;
 }
 
 main ul {
-    list-style:none;
+    list-style:none /*define estilo de una lista*/
     border: 5px solid #3C729F;
     border-radius: 8px;
     background-color: darkgray;
@@ -44,7 +58,7 @@ main ul li {
 }
 
 main ul li span {
-    font-weight: 900;
+    font-weight: 900; /*grosor o peso de texto*/
 }
 
 input[type="text"],
@@ -60,6 +74,7 @@ textarea {
 
 .contenedor-btn {
     border-top: 5px dashed #C902EC;
+    padding: 15px;
 }
 
 .btn {
@@ -68,7 +83,7 @@ textarea {
     font-weight: 700;
     background-color: #000000;
     color: bisque;
-    padding: 8px;
+    padding-top: 8px; /*espacio interno o relleno superior entre el borde de un elemento y el contenido*/
 }
 
 #btn-contacto {
@@ -80,4 +95,9 @@ textarea {
     color: #000000;
     background-color: #70CB49;
 }
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
 
